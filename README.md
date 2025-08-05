@@ -1,6 +1,5 @@
-# REST API Project README
+# FundRace REST API App
 
-[![License](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/your-username/your-repo/graphs/commit-activity)
 [![Fundraising](https://img.shields.io/badge/Fundraising-Active-brightgreen)](https://example.com/fundraising)
 
