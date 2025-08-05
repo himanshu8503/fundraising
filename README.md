@@ -9,6 +9,9 @@ This REST API provides user authentication and serves static content. It allows 
 
 > Briefly expand on the specific purpose and functionality of your API here. What problem does it solve? What are its key features?
 
+## Screenshot
+
+![Screenshot](./public/screenshort/screenshot1.png)
 
 ## Deployment
 npm install
