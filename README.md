@@ -10,11 +10,10 @@ This REST API provides user authentication and serves static content. It allows 
 > Briefly expand on the specific purpose and functionality of your API here. What problem does it solve? What are its key features?
 
 
-Here is a screenshot:
+## Here is a screenshot:
 
 ![App Screenshot](public/screenshort/Screenshot1.png)
 
 ## Deployment
-npm install
-create .env
-npm start
+
+npm install --> create .env --> npm start
