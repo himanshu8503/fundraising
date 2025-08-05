@@ -11,7 +11,7 @@ This REST API provides user authentication and serves static content. It allows 
 
 ## Screenshot
 
-![Screenshot](./public/screenshort/screenshot1.png)
+[Screenshot](/screenshort/screenshot1.png)
 
 ## Deployment
 npm install
