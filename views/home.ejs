@@ -1,0 +1,51 @@
+<html lang="en">
+<head>
+    <%- include('./partials/head.ejs') %>
+    <link rel="stylesheet" href="/nav.css">
+    <title>Home</title>
+</head>
+<body>
+    <%- include('./partials/nav.ejs') %>
+
+    <div class="hero">
+        <h1 class="hero-heading">FundRace</h1>
+        <div class="container-home">
+            <% if (locals.user) { %>
+                <% if (!locals.fundbyuser) { %>
+                    <form class="form" action="/user/fund" method="post">
+                        <label for="fund" class="form-lable">Fund</label>
+                        <input  id="fund" class="form-input" name="fund" type="number" placeholder="Enter Ammount to raising the fund"/>
+                        <button type="submit" class="btn btn-primary">Raise</button>
+                    </form>
+                <% } else { %>
+                    <div>
+                        <h2><%= user.fullname %></h2>
+                        <p>Referal code: <%= user.fullname %>2025</p>
+                        <h1>Fund : <%= fundbyuser.fundNum %></h1>
+                    </div>
+                <% } %>
+                <div class="leadboad">
+                        <div class="leaderboard-head">
+                            <p>Sno.</p>
+                            <p>Name</p>
+                            <p>Fund</p>
+                        </div>
+                        <% highestfund.forEach((fund,index) => { %>
+                         <div class="leaderboard-element">
+                            <p><%= index + 1 %></p>
+                            <p><%= fund.createdby.fullname %></p>
+                            <p><%= fund.fundNum %></p>
+                         </div>
+                        <% }) %>
+                </div>
+            <% } else {%>
+                <h2 class="advice">Please signin/signup for registered your fund</h2>
+            <% } %>
+        </div>
+    </div>
+
+
+
+    <%- include('./partials/script.ejs') %>
+</body>
+</html>

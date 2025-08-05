@@ -1,0 +1,28 @@
+<section class="nav-wapper">
+    <nav class="navbar">
+        <div class="logo-wapper">
+            <h1 class="logo">FundRace</h1>
+        </div>
+        <div class="navbar-left">
+            <div class="nav-element">
+                <a href="/">Home</a>
+            </div>
+            <% if (!locals.user) { %>
+                <div class="nav-element" z>
+                    <a href="/signup">Create Account</a>
+                </div>
+                <div class="nav-element" z>
+                    <a href="/signin">Login</a>
+                </div>
+            <% } else { %>
+                <div class="nav-element" z>
+                    <a href=""><%= user.fullname %></a>
+                </div>
+                <div class="nav-element" z>
+                    <a href="/logout">Logout</a>
+                </div>
+            <% } %>
+
+        </div>
+    </nav>
+</section>

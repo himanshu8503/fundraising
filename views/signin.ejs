@@ -1,0 +1,26 @@
+<html lang="en">
+<head>
+    <%- include('./partials/head.ejs') %>
+    <title>SignIn</title>
+</head>
+<body>
+    <section class="container">
+        <form action="/user/signin" method="post">
+            <div>
+                <label class="form-lable" for="email">Email</label>
+                <input class="form-input" id="email" name="email" placeholder="Enter Your Email ID"/>
+            </div>
+            <div>
+                <label class="form-lable" for="password">Password</label>
+                <input class="form-input" id="password" name="password" placeholder="Enter Your Password"/>
+            </div>
+            <button type="submit" class="btn btn-primary">LogIn</button>
+        </form>
+        <div class="option">
+            <p>if your account is not created then -></p>
+            <a href="/signup">Signup</a>
+        </div>
+    </section>
+    <%- include('./partials/script.ejs') %>
+</body>
+</html>

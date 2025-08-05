@@ -1,0 +1,154 @@
+:root{
+    --primary-500: hsl(259,13%,28%);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body{
+    background-color: lightblue;
+    height: 100vh;
+    width: 100%;
+}
+
+.container{
+    background-color: #77BEF0;
+    padding: 2rem;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    border-radius: 10px;
+    border: white solid 1px;
+
+}
+
+.container-home{
+    background-color: #77BEF0;
+    padding: 2rem;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    border-radius: 10px;
+    border: white solid 1px;
+    width: 50%;
+    position: relative;
+}
+
+.leadboad{
+    background-color: gold;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: #222831  solid 1px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.leaderboard-head{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    width: 100%;
+}
+
+.leaderboard-element{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    width: 100%;
+}
+
+.leaderboard-element:nth-child(2n)
+{
+    background-color: goldenrod;
+
+}
+
+.hero{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: .3rem;
+}
+
+.hero-heading{
+    font-size: 5rem;
+    color: #EA5B6F;
+}
+
+.form-lable{
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+    display: block;
+    color: #222831;
+}
+
+.form-input{
+    padding: 15px;
+    border: none;
+    border-radius:10px ;
+    margin-bottom: 20px;
+    width: 100%;
+    font-size: 1.2rem;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+
+.btn{
+    border: none;
+    
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+    border-radius: 25px;
+    padding: 12px 20px;
+    letter-spacing: 2px;
+    color: #EA5B6F;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    cursor: pointer;
+}
+
+.advice{
+    color: #222831;
+    font-size: 2rem;
+}
+
+.option{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px;
+    font-size: 1.5rem;
+}
+
+a{
+ text-decoration: none;
+ color: white;   
+
+}
+
+a:hover{
+    color: #EA5B6F;
+}
+
+
+
